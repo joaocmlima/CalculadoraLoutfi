@@ -1,0 +1,20 @@
+#teclado{
+ margin-top: 2%;
+}
+
+button{
+    
+    margin: 1%;
+}
+
+.numero{
+    background-color: blue; 
+}
+
+.sinal{
+    background-color: grey;
+}
+
+.igual{
+    background-color: red;
+}

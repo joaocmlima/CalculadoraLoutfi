@@ -1,0 +1,76 @@
+<div id="teclado">
+    <div class="container">
+        <div class="row">
+            <input class="form-control" type="text" name="resultado" [(ngModel)]="resultado" readonly>
+        </div>
+
+        <div class="row">
+            <div class="col-3">
+                <button (click)="clicar('0')" class="btn btn-primary btn-block">0</button>
+            </div>
+
+            <div class="col-3">
+                <button (click)="clicar('1')" class="btn btn-primary btn-block">1</button>
+            </div>
+
+            <div class="col-3">
+                <button (click)="clicar('2')" class="btn btn-primary btn-block">2</button>
+            </div>
+
+            <div class="col-3">
+                <button (click)="clicar('*')" class="btn btn-secondary btn-block">*</button>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-3">
+                <button (click)="clicar('3')" class="btn btn-primary btn-block">3</button>
+            </div>
+
+            <div class="col-3">
+                <button (click)="clicar('4')" class="btn btn-primary btn-block">4</button>
+            </div>
+
+            <div class="col-3">
+                <button (click)="clicar('5')" class="btn btn-primary btn-block">5</button>
+            </div>
+
+            <div class="col-3">
+                <button (click)="clicar('/')" class="btn btn-secondary btn-block">/</button>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-3">
+                <button (click)="clicar('6')" class="btn btn-primary btn-block">6</button>
+            </div>
+
+            <div class="col-3">
+                <button (click)="clicar('7')" class="btn btn-primary btn-block">7</button>
+            </div>
+
+            <div class="col-3">
+                <button (click)="clicar('8')" class="btn btn-primary btn-block">8</button>
+            </div>
+
+            <div class="col-3">
+                <button (click)="clicar('-')" class="btn btn-secondary btn-block">-</button>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-3">
+                <button (click)="clicar('9')" class="btn btn-primary btn-block">9</button>
+            </div>
+
+            <div class="col-3">
+                <button (click)="limpar()" class="btn btn-secondary btn-block">CE</button>
+            </div>
+
+            <div class="col-3">
+                <button (click)="calcular()" class="btn btn-danger btn-block">=</button>
+            </div>
+
+            <div class="col-3">
+                <button (click)="clicar('+')" class="btn btn-secondary btn-block">+</button>
+            </div>
+        </div>
+    </div>
+</div>
