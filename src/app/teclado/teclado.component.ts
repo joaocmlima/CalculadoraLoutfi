@@ -45,8 +45,8 @@ export class TecladoComponent implements OnInit {
       this.resultado=this.resultado.replace("-", valor);
     }
   
-    //se o primeiro caractere inserido após um sinal for '0' e ele não for o caractere final do numero será
-    //substituído pelo próximo número
+    /* se o primeiro caractere inserido após um sinal for '0' e ele não for o caractere final do numero será
+    substituído pelo próximo número */
     if(this.resultado.charAt(this.resultado.length-1)=="0" 
     && !this.isNumber(this.resultado.charAt(this.resultado.length-2)) 
     && this.isNumber(valor)){
