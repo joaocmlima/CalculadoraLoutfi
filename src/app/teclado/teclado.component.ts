@@ -15,7 +15,7 @@ export class TecladoComponent implements OnInit {
   }
 
   clicar(valor:string){
-      //testa se já foi usado algum sinal na string antes para calcular antes de inserir novo sinal
+    //testa se já foi usado algum sinal na string antes para calcular antes de inserir novo sinal
     if((this.resultado.includes("*")
     || this.resultado.includes("/")
     || this.resultado.includes("+")
@@ -67,6 +67,10 @@ export class TecladoComponent implements OnInit {
         this.resultado+=valor;
       }
 
+     //primeiro caractere não pode ser zero
+    }else if(this.resultado.length==0 && !this.isNumber(valor)){
+      
+      
     }else{
       this.resultado+=valor;
     }
@@ -84,7 +88,7 @@ export class TecladoComponent implements OnInit {
   }
 
   //testa se @valor:string passado é um número
-  isNumber(valor:string){
+  public isNumber(valor:string){
     if(valor == '1'
     || valor == '2'
     || valor == '3'
